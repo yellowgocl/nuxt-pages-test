@@ -21,6 +21,7 @@ module.exports = {
     baseUrl
   },
   router: {
+    base: 'nuxt-pages-test',
     middleware: [ 'routeCallback' ]
   },
   /*
