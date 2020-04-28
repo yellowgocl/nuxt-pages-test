@@ -1,1 +1,1 @@
-# nuxt-pages-test
+test

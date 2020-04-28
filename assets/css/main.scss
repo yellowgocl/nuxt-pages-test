@@ -1,0 +1,148 @@
+@import './base.scss';
+@import './element-ui.scss';
+@font-face {
+  font-family: "BellMT";
+  src: url("~assets/font/BellMTPro.OTF");
+}
+@font-face {
+  font-family: "BellMTBold";
+  src: url("~assets/font/BELLB.TTF");
+}
+.em-m-button.el-button:focus, .em-m-button.el-button:hover, .em-m-button {
+  background-image: linear-gradient(to bottom, #e0d698, #917d53);
+  background-color: $primary-color;
+  font-family: 'BellMTBold';
+  font-size: 22px;
+  color: black;
+  border:none;
+  p {
+    margin: 0;
+  }
+}
+.em-m-button.el-button.is-disabled, .em-m-button.el-button.is-disabled:focus, .em-m-button.el-button.is-disabled:hover {
+  color: black;
+  cursor: not-allowed;
+  opacity: 0.3;
+  border:none;
+}
+.em-m-button.el-button.is-active, .em-m-button.el-button.is-plain:active {
+  background-image: linear-gradient(to bottom, #f1f1f0, #dcdcdb);
+}
+.em-m-button.el-button:active, .em-m-button.el-button.is-active, .em-m-button.el-button.is-plain:active {
+  color: black;
+  background-image: linear-gradient(to bottom, #f1f1f0, #dcdcdb);
+  border:none;
+  span, p {
+    background: -webkit-gradient(linear, 0% 0%, 100% 0%, from(#816b46), to(#b1a278));
+    color: transparent;
+    // -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+.em-container {
+  @extend .d-f;
+  @extend .justify-center;
+  @extend .f-col;
+}
+.em-content{
+  @extend .desktop-w1440;
+  @extend .d-f;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.em-m-content{
+  @extend .mobile-w1024;
+  @extend .d-f;
+  padding: 0 20px;
+}
+.main-menu .el-divider, .home .el-divider {
+  // background-color: rgba($color: $primary-color, $alpha: 1);
+  // background-image: linear-gradient(to right, #000, #fff);
+  background-image: repeating-linear-gradient(90deg,#9b6b4c, #e8e56f 50%, #9b6b4c 75%);
+  height: 4px;
+}
+
+body {
+  background: #000;
+  // background: #656565;
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: "BellMT", "BellMTBold", "Arial";
+}
+
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: ' ';
+    clear: both;
+    height: 0;
+  }
+}
+
+// main-container global css
+.app-container {
+  padding: 20px;
+}
+.mobile-w768 {
+  width:768px;
+}
+.mobile-w1024 {
+  width:1024px;
+}
+.desktop-w1280 {
+  width:1280px;
+}
+
+.desktop-w1920 {
+  width:1920px;
+}
+
+.desktop-w1440 {
+  width:1440px;
+}
+
+// custom global css
+
+$spacer-base: 16px;
+$spacer-direction: t, b, l, r, x, y, a;
+$spacer-scale: 0, 0.25, 0.5, 1, 1.5, 3;
