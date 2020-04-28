@@ -107,9 +107,9 @@ module.exports = {
       }
     }
   },
-  generate: {
-    dir: 'public',
-  }
+  // generate: {
+  //   dir: 'dist',
+  // }
 
 
 }
